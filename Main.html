@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>title</title>
+  <style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        /* overflow: hidden; */
+    }
+
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(26, 26, 26);
+        z-index: -1;
+        filter: blur(1px);
+    }
+
+    #particles-js canvas {
+        filter: drop-shadow(0 0 6px #ffffff);
+    }
+
+    .title-text-v1 {
+        text-align: center;
+        font-size: 30px;
+        font-family: Roboto, sans-serif;
+        font-weight: bold;
+        color: white;
+        position: relative;
+        margin-top: 25vh;
+        text-shadow: 0px 0px 10px rgba(255,255,255,0.55);
+    }
+
+    .unhighlightable {
+      user-select: none; /* Prevents text selection */
+      -webkit-user-select: none; /* For WebKit browsers (e.g., Chrome, Safari) */
+      -moz-user-select: none; /* For Firefox */
+      -ms-user-select: none; /* For older versions of Internet Explorer */
+    }
+
+
+    .My-Name {
+        text-align: center;
+        font-size: 50px;
+        font-family: Roboto, sans-serif;
+        font-weight: bold;
+        color: white;
+        position: relative;
+        margin-top: -60px;
+        text-shadow: 0px 0px 10px rgba(255,255,255,0.55);
+    }
+
+    .basic-text-v1 {
+        text-align: center;
+        font-size: 20px;
+        font-family: Roboto, sans-serif;
+        font-weight: normal;
+        color: rgb(207, 207, 207);
+        position: relative;
+    }
+
+    .thank-you {
+        text-align: center;
+        font-size: 20px;
+        font-family: Roboto, sans-serif;
+        color: white;
+        position: relative;
+        margin-bottom: 50px;
+        margin-top: -60px;
+        text-shadow: 0px 0px 10px rgba(255,255,255,0.55);
+    }
+
+    .basic-card {
+    background-color: rgb(26, 26, 26);
+    box-shadow: 1px 0px 26px -11px rgba(0,0,0,1);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 150px auto 0 auto;
+    padding: 20px;
+    }
+
+    .gradient-text {
+        background: linear-gradient(to right, #fff371, #ff8e43, #ff4848, #ff8e43, #fff371);
+        background-size: 200%;
+        background-clip: text;
+        font-size: 30px;
+        font-weight: bold;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate-gradient 2.5s linear infinite;
+        text-shadow: 0px 0px 10px #FFA243;
+    }
+
+    @keyframes animate-gradient {
+        to {
+            background-position: 200%;
+        }
+    }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 999;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="unhighlightable">
+  <nav class="navbar"></nav>
+  <div id="particles-js"></div>
+  <div class="title-text-v1">
+  <a>Hey,</a>
+  </div>
+  <div class="My-Name">
+    <h2>I'm Sepehr Zajforoosh</h2>
+  </div>
+  <div class="thank-you">
+    <a><div class="gradient-text">Thanks for stopping by!</div> This is where I share my latest projects, <br>ideas I’m experimenting with, and anything else I'm building or learning along the way.</a>
+  </div>
+  </div>
+  
+  <div class="basic-card">
+    <div class="basic-text-v1">
+      <h2 style="margin-top: 50px;">I'm an aspiring software and game developer heading to the University of Waterloo, driven by a passion for building innovative digital experiences. In my free time, I enjoy gaming — both as a hobby and a source of inspiration for the projects I create.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+      </div>
+    </div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', '/particles.json', function() {
+      console.log('Particles.js config loaded');
+    });
+  </script>
+</body>
+</html>
