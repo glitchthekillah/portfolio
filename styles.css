@@ -188,5 +188,40 @@ html, body {
 
 #about {
   position: relative;
-  top: -32px;
+  top: 32px;
+}
+
+.email-text-v2 {
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 20px;
+  opacity: 0.5;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: max-content;
+  margin: 0 auto;
+}
+
+
+.email-text-v2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: all 0.4s ease;
+}
+
+.email-text-v2:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.email-text-v2:hover::after {
+  width: 100%;
 }
