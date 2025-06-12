@@ -137,9 +137,29 @@ html, body {
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 30px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.nav-links li {
+  position: relative;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 1px;
+  background-color: #ff0000;
 }
 
 .nav-links li a {
