@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 #particles-js {
@@ -163,4 +164,9 @@ html, body {
     gap: 15px;
     margin-top: 15px;
   }
+}
+
+#about {
+  position: relative;
+  top: -32px;
 }
