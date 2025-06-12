@@ -138,6 +138,47 @@
     background: linear-gradient(to right, #ffffff, #ffffff, #ffffff);
   }
 
+  /* Logo style */
+  .navbar .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffaa00;
+  }
+
+  /* Navigation links container */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+
+  /* Individual link style */
+  .nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+
+  /* Hover effect */
+  .nav-links li a:hover {
+    color: #ff8e43;
+  }
+
+  /* Responsive (optional) */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 15px;
+    }
+}
+
 
 
 
@@ -146,7 +187,15 @@
 
 <body>
   <div class="unhighlightable">
-  <nav class="navbar"></nav>
+  <nav class="navbar">
+    <div class="logo">GL</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
   <div id="particles-js"></div>
   <div class="title-text-v1">
   <a>Hey,</a>
