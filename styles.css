@@ -71,7 +71,7 @@ html, body {
 
 .basic-card {
   position: relative;
-  background-color: rgb(26, 26, 26);
+  background: linear-gradient(to bottom, #1a1a1a, #000000);
   box-shadow: 1px 0px 26px -11px rgba(0,0,0,1);
   margin: 150px auto 0 auto;
   padding: 20px;
