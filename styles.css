@@ -224,4 +224,5 @@ html, body {
 
 .email-text-v2:hover::after {
   width: 100%;
+  letter-spacing: 3px;
 }
