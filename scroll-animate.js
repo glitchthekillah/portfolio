@@ -5,19 +5,13 @@ window.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const el = entry.target;
-          el.classList.add('animate');
-          observer.unobserve(el);
-          
-          // Remove orange tips after animation duration (2.5s)
-          setTimeout(() => {
-            el.classList.remove('animate');
-          }, 2500);
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target); // Stop observing after animation triggers
         }
       });
     }, {
       root: null,
-      rootMargin: "-200px 0px 0px 0px",
+      rootMargin: "-200px 0px 0px 0px", // Trigger 200px before element fully in view
       threshold: 0
     });
 

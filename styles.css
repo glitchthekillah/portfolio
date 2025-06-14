@@ -234,13 +234,13 @@ html, body {
 
 hr.new1 {
   border: none;
-  height: 1px;
+  height: 2px;
   background: linear-gradient(to right, #131313, white, #131313);
   margin-top: 60px;
 }
 
 hr.new1.animate {
-  animation: animate-line 2.5s forwards;
+  animation: animate-line 1s forwards;
 }
 
 @keyframes animate-line {
