@@ -9,44 +9,60 @@
 <body>
   <div id="top"></div>
   <div class="unhighlightable">
-    <a><br></a>    <!-- for some reason #top will not take you to the top of the site so this is a quick an easy fix -->
-  <nav class="navbar">
-    <div class="logo">GL</div>
-    <ul class="nav-links">
-      <li><a href="#top">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#bottom">Contact</a></li>
-    </ul>
-  </nav>
-  <div id="particles-js"></div>
-  <div class="title-text-v1">
-  <a>Hey!</a>
+    <a><br></a>
+    <nav class="navbar">
+      <div class="logo">GL</div>
+      <ul class="nav-links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#bottom">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="particles-js"></div>
+    <div class="title-text-v1"><a>Hey!</a></div>
+    <div class="My-Name"><h2>I'm Sepehr Zajforoosh</h2></div>
+    <div class="thank-you">
+      <a>
+        <div class="gradient-text" style="padding-bottom: 10px;">Thanks for stopping by!</div>
+        This is where I share my latest projects, <br>ideas I’m experimenting with, and anything else I'm building or learning along the way.
+      </a>
+    </div>
   </div>
-  <div class="My-Name">
-    <h2>I'm Sepehr Zajforoosh</h2>
-  </div>
-  <div class="thank-you">
-    <a><div class="gradient-text" style="padding-bottom: 10px;">Thanks for stopping by!</div> This is where I share my latest projects, <br>ideas I’m experimenting with, and anything else I'm building or learning along the way.</a>
-  </div>
-  </div>
+
   <div id="about"></div>
-  <div class="basic-card">                    <!-- about me -->
-    
-    <div class="basic-text-v1"><div style="margin-top: 20px; color: gray;"><a style="text-decoration: underline;">About me:<br></a></div><h1>I'm an aspiring software and game developer heading to the University of Waterloo, driven by a passion for building innovative digital experiences. In my free time, I enjoy gaming — both as a hobby and a source of inspiration for the projects I create.<hr class="new1"></h1></div>
+  <div class="basic-card"> <!-- about me -->
+    <div class="basic-text-v1">
+      <div style="margin-top: 20px; color: gray;">
+        <a style="text-decoration: underline;">About me:<br></a>
+      </div>
+      <h1>
+        I'm an aspiring software and game developer heading to the University of Waterloo, driven by a passion for building innovative digital experiences. In my free time, I enjoy gaming — both as a hobby and a source of inspiration for the projects I create.
+        <hr class="new1">
+      </h1>
+    </div>
 
     <div id="projects"></div>
-    <div class="basic-text-v1"><h1>COMING SOON!</h1><a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr class="new1"></a></div>
-
-    <div id="bottom"></div>                    <!-- contact me -->
-    <div class="basic-text-v1" style="margin-bottom: 15px; margin-top:20px; color: gray; text-decoration: underline;"><a>Contact me:<br></a></div>
-    <a href="mailto:szajforoosh@gmail.com" class="email-text-v2">szajforoosh@gmail.com</a>
+    <div class="basic-text-v1">
+      <h1>COMING SOON!</h1>
+      <a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr class="new1">
+      </a>
     </div>
+
+    <div id="bottom"></div> <!-- contact me -->
+    <div class="basic-text-v1" style="margin-bottom: 15px; margin-top:20px; color: gray; text-decoration: underline;">
+      <a>Contact me:<br></a>
+    </div>
+    <a href="mailto:szajforoosh@gmail.com" class="email-text-v2">szajforoosh@gmail.com</a>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
     particlesJS.load('particles-js', '/particles.json', function() {
       console.log('Particles.js config loaded');
     });
   </script>
+  <script src="scroll-animate.js"></script>
 </body>
 </html>

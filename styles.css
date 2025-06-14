@@ -238,3 +238,16 @@ hr.new1 {
   background: linear-gradient(to right, #131313, white, #131313);
   margin-top: 60px;
 }
+
+hr.new1.animate {
+  animation: animate-line 2.5s forwards;
+}
+
+@keyframes animate-line {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
