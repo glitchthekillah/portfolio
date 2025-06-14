@@ -209,7 +209,6 @@ html, body {
   margin: 0 auto;
 }
 
-
 .email-text-v2::after {
   content: "";
   position: absolute;
@@ -226,6 +225,7 @@ html, body {
   opacity: 1;
   transform: scale(1.05);
   letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 .email-text-v2:hover::after {
