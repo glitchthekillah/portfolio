@@ -237,6 +237,7 @@ hr.new1 {
   height: 2px;
   background: linear-gradient(to right, #131313, white, #131313);
   margin-top: 60px;
+  width: 0%;
 }
 
 hr.new1.animate {
