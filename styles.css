@@ -6,7 +6,7 @@ html, body {
 }
 
 #particles-js {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -250,5 +250,35 @@ hr.new1.animate {
   }
   100% {
     width: 100%;
+  }
+}
+
+.ripple {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 0px solid white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: ripple-effect 15s infinite ease-out;
+  pointer-events: none;
+  box-shadow: 0 0 10px 1px white, inset 0 0 15px 1px white;
+}
+
+@keyframes ripple-effect {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    width: 1300px;
+    height: 1300px;
+    opacity: 0;
   }
 }
