@@ -56,7 +56,18 @@ html, body {
     font-weight: normal;
     color: rgb(207, 207, 207);
     position: relative;
+    animation: fade-in 1s ease-out forwards;
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .thank-you {
     text-align: center;
@@ -265,6 +276,7 @@ hr.new1.animate {
   animation: ripple-effect 15s infinite ease-out;
   pointer-events: none;
   box-shadow: 0 0 10px 1px white, inset 0 0 15px 1px white;
+  z-index: -1;
 }
 
 @keyframes ripple-effect {
