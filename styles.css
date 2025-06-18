@@ -264,46 +264,80 @@ hr.new1.animate {
   }
 }
 
-.ripple {
-  position: absolute;
-  top: 47%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: ripple-effect 15s infinite ease-out;
-  pointer-events: none;
-  box-shadow: 0 0 10px 1px white, inset 0 0 15px 1px white;
-  z-index: -1;
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0 0 0;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+  }
+
+  .nav-links li:not(:last-child)::after {
+    display: none;
+  }
+
+  .title-text-v1 {
+    font-size: 7vw;
+    margin-top: 20vh;
+  }
+
+  .My-Name {
+    font-size: 9vw;
+    margin-top: -30px;
+  }
+
+  .basic-text-v1 {
+    font-size: 4vw;
+    padding: 0 5vw;
+  }
+
+  .thank-you {
+    font-size: 5vw;
+    margin-top: -40px;
+  }
+
+  .basic-card {
+    width: 90%;
+    margin: 60px auto 0 auto;
+    padding: 15px;
+  }
+
+  .gradient-text {
+    font-size: 7vw;
+    text-align: center;
+    display: block;
+  }
+
+  .email-text-v2 {
+    font-size: 4.5vw;
+  }
 }
 
-@keyframes ripple-effect {
-  0% {
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-    animation-timing-function: ease-out;
-    box-shadow: 0 0 10px 1px black, inset 0 0 15px 20px black;
+@media (max-width: 480px) {
+  .title-text-v1 {
+    font-size: 8vw;
   }
-  25% {
-    opacity: 0.5;
+
+  .My-Name {
+    font-size: 10vw;
   }
-  50% {
-    width: 1300px;
-    height: 1300px;
-    opacity: 0.2;
-    animation-timing-function: ease-in;
-    box-shadow: 0 0 10px 1px black, inset 0 0 15px 1px black;
+
+  .thank-you {
+    font-size: 6vw;
   }
-  75% {
-    opacity: 0.5;
-  }
-  100% {
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-    box-shadow: 0 0 10px 20px black, inset 0 0 15px 1px black;
+
+  .gradient-text {
+    font-size: 8vw;
   }
 }
